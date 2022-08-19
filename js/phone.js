@@ -22,9 +22,11 @@ function updateTotalPhonePrice(newNumber) {
 document.getElementById('btn-phone-plus').addEventListener('click', function () {
     const newNumber = updatePhoneNumber(true);
     updateTotalPhonePrice(newNumber);
+    calculateSubTotal();
 });
 
 document.getElementById('btn-phone-minus').addEventListener('click', function () {
     const newNumber = updatePhoneNumber(false);
     updateTotalPhonePrice(newNumber);
+    calculateSubTotal();
 });
